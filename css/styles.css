@@ -2,3 +2,11 @@ h2 {
   font-family: abel;
   color: #d83c2d ;
 }
+a:hover {
+  text-decoration: none;
+  color: #d83c2d ;
+}
+a:focus {
+  text-decoration: none;
+  color: #d83c2d ;
+}
