@@ -10,3 +10,13 @@ a:focus {
   text-decoration: none;
   color: #d83c2d ;
 }
+#navbar button {
+    border-radius: 1px;
+}
+#navbar input {
+    border-radius: 1px;
+}
+#navbar input:focus {
+    border: 1px solid #3498db;
+    box-shadow: none;
+}
