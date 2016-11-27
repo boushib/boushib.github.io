@@ -92,3 +92,10 @@ a:focus {
 #form {
 	margin-top: 10px;
 }
+
+#getStarted {
+	color: #333;
+}
+#getStarted:hover {
+	color: #666;
+}
