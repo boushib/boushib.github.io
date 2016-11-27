@@ -5,9 +5,42 @@
     <title>AN OPENMINDED</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+    $(function(){
+
+        $("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+    function foo(){ console.log("Callback"); }
+    </script>
+    <script>
+	$( "button" ).click(function() {
+	  $( "p.fa" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
+	});
+	</script>
   </head>
   <body>
     <!-- Navigation bar -->
@@ -48,19 +81,25 @@
       </nav>
       </div>
     <br><br><br><br>
-    <div class="container"><img src="img/banner.jpg" class="img-responsive center-block" alt="banner-physics"></div>
-    <div class="container">
-      <div class="container">
-        <h2 class="text-center">AN OPENMINDED</h2>
-        <p class="text-center" style="text-align: justify;">Nous sommes une communauté de partage des sciences physiques au Maroc ..
-        Vous êtes enseignant des sciences physique? Vous êtes physicien ou passioné des sciences physique? Vous avez des resumés
-        de cours, des receuils d'exercices, des fiches techniques ou tout type de ressouces numériques que vous voulez partager avec
-        la communauté des enseignants et d'etudiants marocains? Vous voulez simplement partager votre expertise pour aider les
-        enseignants débutants? Ou bien vous chercher l'aide ou le support technique pour l'utilisation des ressouces numérques dans vos séances de cours ou de TP? <br>
-       Et bien! Vous êtes au bon coin ! <br>
-   Ici on croit fortement au <strong>partage</strong> .. On croit fortement à l'<strong>initiative</strong> .. On croit fortment à l'<strong>OpenSource</strong> ..</p>
-      </div>
+    <div class="container" id="mainMessage">
+
+        <div class="col-md-4 col-md-offset-4">
+           <h1>AN OPENMINDED</h1>
+            <div id="typed-strings">
+                <p>Here we <em style="color: #1c8cc7;">believe</em> in science.</p>
+                <p>Here we <em style="color: #1c8cc7;">share</em> knowledge</p>
+                <span>Here we <em style="color: #1c8cc7;">learn</em> new stuffs.</span>
+                <p><a href="#">Let's get strated.</a></p>
+            </div>
+            <span id="typed" style="white-space:pre;"></span>
+            <!-- 
+            <p><button>Run</button></p>
+            <p class="text-center"><i class="fa fa-arrow-circle-down"  aria-hidden="true"></i></p>
+            -->
+        </div>
+
     </div>
+    
 
     <hr>
 
@@ -68,21 +107,19 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4" style="text-align: justify;">
-          <h2>L'idee du projet</h2>
-          <p>L'idée du projet vit le jour au centre régional des métiers de l'education et de la formation (CRMEF) - El Jadida</p>
-          <p><a class="btn btn-default" href="#" role="button">Plus de détails &raquo;</a></p>
+          <h2>Idea</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, earum fuga ab et animi dolore voluptates deleniti eveniet voluptatum enim ipsa cumque neque omnis aut, distinctio, vero! Hic tempore, quo!</p>
+          <p><a class="btn btn-default" href="#" role="button">Read more &raquo;</a></p>
         </div>
         <div class="col-md-4" style="text-align: justify;">
-          <h2>Un projet OpenSource</h2>
-          <p>Vous êtes professeur de physique chimie et vous voulez partagez vos cours et vos manuels d'exercices pour être critiqués,
-             améliorés et repartagés en tant qu'OpenSource ? Eh bien ! Soyez le bienvenu dans cette communauté !</p>
-          <p><a class="btn btn-default" href="#" role="button">Plus de détails &raquo;</a></p>
+          <h2>An OpenSource Project</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque optio eius iusto repellendus, quisquam vitae, nihil incidunt fuga expedita temporibus fugiat aut possimus aliquid excepturi? Sed asperiores eligendi recusandae ea.</p>
+          <p><a class="btn btn-default" href="#" role="button">Read more &raquo;</a></p>
        </div>
         <div class="col-md-4" style="text-align: justify;">
-          <h2>Nos ambitions</h2>
-          <p>Nous visons en premier lieu par ce projet de contribuer au developpement du systeme educatif marocain, en renforçant
-            l'usage des nouvelles technologies et de technologie de l'information au service de l'enseignement.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <h2>Our Ambitions</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque consequatur aperiam optio iste doloremque praesentium adipisci veritatis vitae dolor voluptates voluptate temporibus ipsum officiis, placeat culpa, ad cumque quasi animi?</p>
+          <p><a class="btn btn-default" href="#" role="button">Read more &raquo;</a></p>
         </div>
       </div>
       <hr>
@@ -90,8 +127,6 @@
         <p>&copy; AN OPENMINDED 2016</p>
       </div>
     </div>
-
-    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
