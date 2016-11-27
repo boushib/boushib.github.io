@@ -2,8 +2,12 @@ body {
   background: #4CAF50;
 }
 
+#contact input {
+	font-family: arial;
+	font-size: 20px;
+}
 .container {
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -15,7 +19,7 @@ body {
 #contact input[type="url"],
 #contact textarea,
 #contact button[type="submit"] {
-  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  font: 400 14px/18px "Roboto", Helvetica, Arial, sans-serif;
 }
 
 #contact {
@@ -53,7 +57,7 @@ fieldset {
 #contact input[type="url"],
 #contact textarea {
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   background: #FFF;
   margin: 0 0 5px;
   padding: 10px;
@@ -105,7 +109,7 @@ fieldset {
 #contact input:focus,
 #contact textarea:focus {
   outline: 0;
-  border: 1px solid #aaa;
+  border: 1px solid #4CAF50;
 }
 
 ::-webkit-input-placeholder {
