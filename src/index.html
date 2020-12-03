@@ -2,138 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>AN OPENMINDED</title>
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Teach</title>
+    <link rel="shortcut icon" href="/static/images/favicon.ico" />
     <link rel="stylesheet" href="/dist/css/app.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css?family=Lobster"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
-      type="text/css"
     />
   </head>
   <body>
-    <!-- Navigation bar -->
-    <div class="container">
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button
-              type="button"
-              class="navbar-toggle"
-              data-toggle="collapse"
-              data-target="#myNavbar"
-            >
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a
-              class="navbar-brand"
-              href="#"
-              style="font-family: Lobster; font-size: 1.7em"
-              >An openminded</a
-            >
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="cours.html">Courses</a></li>
-              <li><a href="exercices.html">Exercices</a></li>
-              <li><a href="examens.html">Exams</a></li>
-              <li><a href="articles/01.html">Articles</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div id="navbar" class="navbar-collapse collapse">
-              <form class="navbar-form navbar-right">
-                <div class="form-group">
-                  <input placeholder="Email" class="form-control" type="text" />
-                </div>
-                <div class="form-group">
-                  <input
-                    placeholder="Password"
-                    class="form-control"
-                    type="password"
-                  />
-                </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-                <button type="submit" class="btn btn-primary">Sign up</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <br /><br /><br /><br />
-    <div class="container" id="mainMessage">
-      <div class="col-md-4 col-md-offset-4">
-        <h1>AN OPENMINDED</h1>
-        <div id="typed-strings">
-          <p>Here we <em style="color: #1c8cc7">believe</em> in science.</p>
-          <p>Here we <em style="color: #1c8cc7">share</em> knowledge</p>
-          <span>Here we <em style="color: #1c8cc7">learn</em> new stuffs.</span>
-          <p><a href="#" id="getStarted">Let's get started.</a></p>
-        </div>
-        <span id="typed" style="white-space: pre"></span>
-        <!-- 
-            <p><button>Run</button></p>
-            <p class="text-center"><i class="fa fa-arrow-circle-down"  aria-hidden="true"></i></p>
-            -->
-      </div>
-    </div>
-
-    <hr />
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4" style="text-align: justify">
-          <h2>Idea</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
-            earum fuga ab et animi dolore voluptates deleniti eveniet voluptatum
-            enim ipsa cumque neque omnis aut, distinctio, vero! Hic tempore,
-            quo!
-          </p>
-          <p>
-            <a class="btn btn-default" href="#" role="button"
-              >Read more &raquo;</a
-            >
-          </p>
-        </div>
-        <div class="col-md-4" style="text-align: justify">
-          <h2>An OpenSource Project</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
-            optio eius iusto repellendus, quisquam vitae, nihil incidunt fuga
-            expedita temporibus fugiat aut possimus aliquid excepturi? Sed
-            asperiores eligendi recusandae ea.
-          </p>
-          <p>
-            <a class="btn btn-default" href="#" role="button"
-              >Read more &raquo;</a
-            >
-          </p>
-        </div>
-        <div class="col-md-4" style="text-align: justify">
-          <h2>Our Ambitions</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
-            consequatur aperiam optio iste doloremque praesentium adipisci
-            veritatis vitae dolor voluptates voluptate temporibus ipsum
-            officiis, placeat culpa, ad cumque quasi animi?
-          </p>
-          <p>
-            <a class="btn btn-default" href="#" role="button"
-              >Read more &raquo;</a
-            >
-          </p>
+    <nav>
+      <div class="container nav__inner">
+        <a class="nav-brand" href="/">Teach</a>
+        <ul class="main-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cours.html">Courses</a></li>
+          <li><a href="exercices.html">Exercices</a></li>
+          <li><a href="examens.html">Exams</a></li>
+          <li><a href="articles/01.html">Articles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-seconday">Sign up</button>
         </div>
       </div>
-      <hr />
-      <div id="footer" class="text-center">
-        <p>&copy; AN OPENMINDED 2016</p>
-      </div>
-    </div>
+    </nav>
     <script src="/src/js/app.js"></script>
   </body>
 </html>

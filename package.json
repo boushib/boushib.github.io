@@ -1,0 +1,8 @@
+{
+  "name": "teach",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/boushib/teach.git",
+  "author": "boushib <boushib01@gmail.com>",
+  "license": "MIT"
+}
