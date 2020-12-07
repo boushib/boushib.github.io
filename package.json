@@ -2,7 +2,21 @@
   "name": "teach",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/boushib/teach.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boushib/teach.git"
+  },
   "author": "boushib <boushib01@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "description": "This is a simple website layout for teachers ..",
+  "bugs": {
+    "url": "https://github.com/boushib/teach/issues"
+  },
+  "homepage": "https://github.com/boushib/teach#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
 }
