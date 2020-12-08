@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
+
+@import './scss/_form.scss';
+@import './scss/_grid.scss';
+@import './scss/_footer.scss';
 
 .app {
   background-color: #fafafa;

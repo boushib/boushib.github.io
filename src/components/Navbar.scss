@@ -1,0 +1,28 @@
+nav {
+  background-color: #f7f7f7;
+  padding: 4px 0;
+  .nav__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-brand {
+      display: flex;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #8bc34a;
+    }
+    .main-menu {
+      display: flex;
+      li {
+        list-style: none;
+        margin: 10px;
+        a {
+          text-decoration: none;
+          color: #777;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
