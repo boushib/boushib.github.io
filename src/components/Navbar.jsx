@@ -5,13 +5,10 @@ import './Navbar.scss'
 const Navbar = () => (
   <nav>
     <div className="container nav__inner">
-      <a className="nav-brand" href="/">
+      <Link to="/" className="nav-brand">
         Teach
-      </a>
+      </Link>
       <ul className="main-menu">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
         <li>
           <Link to="/courses">Courses</Link>
         </li>
