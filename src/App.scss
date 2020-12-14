@@ -10,5 +10,7 @@
 @import './scss/_footer.scss';
 
 .app {
-  background-color: #fafafa;
+  .page {
+    padding: 40px 0;
+  }
 }

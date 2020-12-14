@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Navbar.scss'
 
 const Navbar = () => (
@@ -9,22 +10,16 @@ const Navbar = () => (
       </a>
       <ul className="main-menu">
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/courses">Courses</a>
+          <Link to="/courses">Courses</Link>
         </li>
         <li>
-          <a href="/exercices">Exercices</a>
+          <Link to="/exams">Exams</Link>
         </li>
         <li>
-          <a href="/examens">Exams</a>
-        </li>
-        <li>
-          <a href="/articles">Articles</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
       <div class="btn-group">
